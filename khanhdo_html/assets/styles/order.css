@@ -1,0 +1,101 @@
+.order-detail .buy-gallery {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+  color: #252525;
+  margin-bottom: 20px;
+}
+
+.order-detail .gallery-price {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+  color: #252525;
+  margin-bottom: 20px;
+}
+
+.order-detail .gallery-img {
+  text-align: center;
+  border: 3px solid #E2E2E2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.order-detail .box-img {
+  text-align: center;
+  padding: 0 70px;
+}
+
+.order-info {
+  margin-top: 130px;
+}
+
+.order-info .form-title {
+  padding: 10px 20px;
+  background: #E2E2E2;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #151515;
+  margin-bottom: 5px;
+  font-family: 'Lora', serif;
+}
+
+.order-info label {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.order-info input {
+  height: 47px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+  border: 1px solid #E2E2E2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.order-info input:focus {
+  border: 1px solid #FFBF1B;
+}
+
+.order-info textarea {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+  border: 1px solid #E2E2E2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.order-info textarea:focus {
+  border: 1px solid #FFBF1B;
+}
+
+.btn-send {
+  margin-top: 10px;
+  width: 280px;
+  height: 47px;
+  background: #FFFFFF;
+  border: 1px solid #FFBF1B;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFBF1B;
+}
+
+.btn-send:hover {
+  background: #FFBF1B;
+  color: #fff;
+}
+/*# sourceMappingURL=order.css.map */

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <aside class="aside">
+        <div class="container-fluid">
+            <ul class="navigation-menu">
+                <li class="menu-item">
+                    <a class="link lora" href="#">Trang chủ</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link lora" href="#">Tin tức</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link lora" href="#">Tranh chân dung</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link lora" href="#">Tranh khác</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link lora" href="#">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <header class="header">
+        <div class="row-fix row-gallery">
+            <div class="col-12 col-gallery1">
+                <div class="navbar-logo">
+                    <a class="logo" href="#">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-gallery2">
+                <nav class="navbar navbar-expand">
+                    <div class="navbar-collapse navbar-search">
+                        <div class="navbar-nav navbar-nav-search" id="navSearch">
+                            <div class="search-value">
+                                <div class="item-value">
+                                    <button type="button" class="btn dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="text">Phong cách</span>
+                                        <i class="symbol chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li class="dropdown-item">
+                                            <p>Tự do</p>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <p>Cổ điển</p>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <p>Hiện đại</p>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <p>Nữ tính</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item-value">
+                                    <button type="button" class="btn dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="text">Chủ đề</span>
+                                        <i class="symbol chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li class="dropdown-item">
+                                            <p>Tình yêu</p>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <p>Xã hội</p>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <p>Thiên nhiên</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item-value">
+                                    <button type="button" class="btn dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="text">Chất liệu</span>
+                                        <i class="symbol chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li class="dropdown-item">
+                                            <p>Sơn dầu</p>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <p>Tổng hợp</p>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <p class="text">Dầu trên vải</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="search-line"></div>
+                            <div class="search-input">
+                                <form class="input-group">
+                                    <input type="text" class="form-control" placeholder="Nội dung tìm kiếm" maxlength="60" />
+                                </form>
+                            </div>
+                        </div>
+                        <div class="navbar-nav-button">
+                            <button type="button" class="btn btn-search" id="btnOpen">
+                                <i class="symbol icon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <div class="container-fluid">
+            <div class="control-home">
+                <div class="control" id="control1">
+                    <div class="slideshow-home">
+                        <div class="swiper-container" id="slideShow">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure class="slideshow-image">
+                                        <a href="#" title="">
+                                            <img src="assets/images/slide.png" alt="">
+                                        </a>
+                                    </figure>
+                                    <ul class="slideshow-info">
+                                        <li class="name">
+                                            <h3 class="lora text">The tale of Kieu Illustrations 1</h3>
+                                        </li>
+                                        <li class="tags">
+                                            <a href="javascript:void(0);" title="#">Vườn Illustrations</a>
+                                            <a href="javascript:void(0);" title="#">Inking on paper</a>
+                                            <a href="javascript:void(0);" title="#">Photoshop</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slideshow-image">
+                                        <a href="#" title="">
+                                            <img src="assets/images/slide.png" alt="">
+                                        </a>
+                                    </figure>
+                                    <ul class="slideshow-info">
+                                        <li class="name">
+                                            <h3 class="lora text">The tale of Kieu Illustrations 1</h3>
+                                        </li>
+                                        <li class="tags">
+                                            <a href="javascript:void(0);" title="#">Vườn Illustrations</a>
+                                            <a href="javascript:void(0);" title="#">Inking on paper</a>
+                                            <a href="javascript:void(0);" title="#">Photoshop</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slideshow-image">
+                                        <a href="#" title="">
+                                            <img src="assets/images/slide.png" alt="">
+                                        </a>
+                                    </figure>
+                                    <ul class="slideshow-info">
+                                        <li class="name">
+                                            <h3 class="lora text">The tale of Kieu Illustrations 1</h3>
+                                        </li>
+                                        <li class="tags">
+                                            <a href="javascript:void(0);" title="#">Vườn Illustrations</a>
+                                            <a href="javascript:void(0);" title="#">Inking on paper</a>
+                                            <a href="javascript:void(0);" title="#">Photoshop</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination" id="slideShowPaging"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="control" id="control2">
+                    <div class="product-home">
+                        <div class="product-title">
+                            <h2 class="title lora">Tác phẩm nổi bật</h2>
+                        </div>
+                        <div class="swiper-container" id="productHome">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul class="product-box">
+                                        <li class="box-image">
+                                            <figure class="image">
+                                                <a href="#" title="#">
+                                                    <img src="assets/images/paint1.png" alt="">
+                                                </a>
+                                            </figure>
+                                            <span class="tag tag-sold">Đã bán</span>
+                                        </li>
+                                        <li class="box-info">
+                                            <h3 class="name lora">Dreamlike and Narrative Storybook</h3>
+                                            <p class="author">Illustrations by Jin Xingye</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="product-box">
+                                        <li class="box-image">
+                                            <a href="#" title="#">
+                                                <img src="assets/images/paint3.png" alt="">
+                                            </a>
+                                            <span class="tag tag-sold">Đã bán</span>
+                                        </li>
+                                        <li class="box-info">
+                                            <h3 class="name lora">Dreamlike and Narrative Storybook</h3>
+                                            <p class="author">Illustrations by Jin Xingye</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="product-box">
+                                        <li class="box-image">
+                                            <figure class="image">
+                                                <a href="#" title="#">
+                                                    <img src="assets/images/paint2.png" alt="">
+                                                </a>
+                                                <span class="tag tag-sold">Đã bán</span>
+                                            </figure>
+                                        </li>
+                                        <li class="box-info">
+                                            <h3 class="name lora">Dreamlike and Narrative Storybook</h3>
+                                            <p class="author">Illustrations by Jin Xingye</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="product-box">
+                                        <li class="box-image">
+                                            <figure class="image">
+                                                <a href="#" title="#">
+                                                    <img src="assets/images/paint1.png" alt="">
+                                                </a>
+                                                <span class="tag tag-sold">Đã bán</span>
+                                            </figure>
+                                        </li>
+                                        <li class="box-info">
+                                            <h3 class="name lora">Dreamlike and Narrative Storybook</h3>
+                                            <p class="author">Illustrations by Jin Xingye</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="product-box">
+                                        <li class="box-image">
+                                            <figure class="image">
+                                                <a href="#" title="#">
+                                                    <img src="assets/images/paint3.png" alt="">
+                                                </a>
+                                                <span class="tag tag-sold">Đã bán</span>
+                                            </figure>
+                                        </li>
+                                        <li class="box-info">
+                                            <h3 class="name lora">Dreamlike and Narrative Storybook</h3>
+                                            <p class="author">Illustrations by Jin Xingye</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <ul class="product-box">
+                                        <li class="box-image">
+                                            <a href="#" title="#">
+                                                <img src="assets/images/paint2.png" alt="">
+                                            </a>
+                                            <span class="tag tag-sold">Đã bán</span>
+                                        </li>
+                                        <li class="box-info">
+                                            <h3 class="name lora">Dreamlike and Narrative Storybook</h3>
+                                            <p class="author">Illustrations by Jin Xingye</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control control3">
+                    <div class="article-home">
+                        <div class="article-title">
+                            <h2 class="title lora">Tin tức nghệ thuật</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-12">
+                                <div class="article-content">
+                                    <div class="box-image">
+                                        <figure class="image" style="background-image: url(assets/images/blog1.png)">
+                                            <a href="#" title="#">
+                                                <img src="assets/images/blog1.png" alt="">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="box-info">
+                                        <h3 class="name lora">Khai mạc triển lãm tranh của CLB Nghệ Sĩ Trẻ Hà Nội - Tháng 3/2021</h3>
+                                        <p class="time">09:21 22/3/2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <div class="article-content">
+                                    <div class="box-image">
+                                        <figure class="image" style="background-image: url(assets/images/blog1.png)">
+                                            <a href="#" title="#">
+                                                <img src="assets/images/blog1.png" alt="">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="box-info">
+                                        <h3 class="name lora">Khai mạc triển lãm tranh của CLB Nghệ Sĩ Trẻ Hà Nội - Tháng 3/2021</h3>
+                                        <p class="time">09:21 22/3/2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <div class="article-content">
+                                    <div class="box-image">
+                                        <figure class="image" style="background-image: url(assets/images/blog1.png)">
+                                            <a href="#" title="#">
+                                                <img src="assets/images/blog1.png" alt="">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="box-info">
+                                        <h3 class="name lora">Khai mạc triển lãm tranh của CLB Nghệ Sĩ Trẻ Hà Nội - Tháng 3/2021</h3>
+                                        <p class="time">09:21 22/3/2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <div class="article-content">
+                                    <div class="box-image">
+                                        <figure class="image" style="background-image: url(assets/images/blog1.png)">
+                                            <a href="#" title="#">
+                                                <img src="assets/images/blog1.png" alt="">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="box-info">
+                                        <h3 class="name lora">Khai mạc triển lãm tranh của CLB Nghệ Sĩ Trẻ Hà Nội - Tháng 3/2021</h3>
+                                        <p class="time">09:21 22/3/2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <div class="article-content">
+                                    <div class="box-image">
+                                        <figure class="image" style="background-image: url(assets/images/blog1.png)">
+                                            <a href="#" title="#">
+                                                <img src="assets/images/blog1.png" alt="">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="box-info">
+                                        <h3 class="name lora">Khai mạc triển lãm tranh của CLB Nghệ Sĩ Trẻ Hà Nội - Tháng 3/2021</h3>
+                                        <p class="time">09:21 22/3/2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <div class="article-content">
+                                    <div class="box-image">
+                                        <figure class="image" style="background-image: url(assets/images/blog1.png)">
+                                            <a href="#" title="#">
+                                                <img src="assets/images/blog1.png" alt="">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="box-info">
+                                        <h3 class="name lora">Khai mạc triển lãm tranh của CLB Nghệ Sĩ Trẻ Hà Nội - Tháng 3/2021</h3>
+                                        <p class="time">09:21 22/3/2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="control-button">
+                <button type="button" class="btn btn-slide" id="btnPrev">
+                    <i class="symbol chevron-up2x"></i>
+                </button>
+                <button type="button" class="btn btn-slide" id="btnNext">
+                    <i class="symbol chevron-down2x"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="row-fix row-gallery">
+            <div class="col-12 col-gallery1">
+                <ul class="service-list">
+                    <li class="service-item">
+                        <i class="symbol license"></i>
+                    </li>
+                    <li class="service-item">
+                        <i class="symbol bankcard"></i>
+                    </li>
+                    <li class="service-item">
+                        <i class="symbol delivery"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-gallery2">
+                <div class="footer-text">
+                    <p class="text lora">Logos used on the website are trademarks of the respective companies / owners. © Vietnam Gallery 2020 - 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/scripts/app.js"></script>
+    <script src="assets/scripts/index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

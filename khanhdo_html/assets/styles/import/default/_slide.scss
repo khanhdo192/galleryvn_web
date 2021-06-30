@@ -1,0 +1,174 @@
+.slick-loading {
+	.slick-list{
+		background: #fff url(../images/ajax-loader.gif) center center no-repeat;
+	}
+	.slick-track,.slick-slide{
+		visibility: hidden;
+	}
+}
+.slick-slider {
+    position: relative;
+    display: block;
+    user-select: none;
+    touch-action: pan-y;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+	&:focus{
+		outline: none;
+	}
+	&.dragging {
+		cursor: pointer;
+		cursor: hand;
+	}
+}
+.slick-slider{
+	.slick-track,.slick-list{
+		transform: translate3d(0, 0, 0);
+	}
+	
+}
+
+.slick-track {
+    position: relative;
+    display: block;
+	&:before,&:after{
+		display: table;
+		content: '';
+	}
+	&:after{
+		clear: both;
+	}
+}
+
+.slick-slide {
+    position: relative;
+    display: none;
+    float: left;
+    min-height: 1px;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+	outline: 0;
+	img{
+		display: block;
+		width: 100%;
+	}
+	&.slick-loading{
+		img{
+			display: none;
+		}
+	}
+	&.dragging{
+		img{
+			pointer-events: none;
+		}
+	}
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    display: block;
+    padding: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+	&.slick-hidden {
+		display: none;
+	}
+	&.slick-disabled{
+		opacity: .3;
+	}
+	&:hover,&:focus{
+		color: inherit;
+		outline: none;
+		background: transparent;
+		&:before{
+			opacity: 1;
+		}
+	}
+}
+
+.slick-prev {
+    left: 0;
+	&:before {
+		content: '';
+	}
+}
+.slick-next {
+    right: 0;
+	&:before {
+		content: '';
+	}
+}
+
+[dir='rtl']{
+	.slick-prev {
+		left: 0;
+		&:before {
+			content: '';
+		}
+	}
+	.slick-next {
+		right: 0;
+		&:before {
+			content: '';
+		}
+	}
+}
+
+.slick-dots {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+	li {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+		button {
+			margin: 0;
+			padding: 0;
+			color: transparent;
+			border: 0;
+			outline: none;
+			cursor: pointer;
+			background-color:transparent;
+			&:hover, &:focus{
+				outline: none;
+				&:before{
+					opacity: 1;
+				}
+			}
+		}
+		&.slick-active{
+			button{
+				&:before {
+					opacity: .75;
+					color: black;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+.gallery-section{
+    background-color: #000;
+}
+
+.gallery-container{
+    position: relative;
+    .swiper-pagination{
+        bottom: 20px;
+        right: 20px;
+    }
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 50%;
+        background: #8F8F8F;
+        opacity: 1;
+        margin: 0 8px;
+    }
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #FFBF1B;
+    }
+}
+
+.gallery-container{
+    padding-top: 50px;
+}
+
+.paint-gallery-img{
+    text-align: center;
+}
+
+.info-slide{
+    margin-top: 10px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.gallery-name{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    color: #8F8F8F;
+}
+
+.paint-gallery-item{
+    margin: 0 45px;
+}
+
+.gallery-item{
+    margin-top: 2px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+    color: #656565;
+    span{
+        font-size: 13px;
+        font-weight: 400;
+        font-family: 'Noto Sans', sans-serif;
+        color: #656565;
+    }
+}
+
+.btn-scroll-down{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-image: url('../images/icon/btndown.svg');
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+.btn-scroll-hover{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-image: url('../images/icon/btndownhover.svg');
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}

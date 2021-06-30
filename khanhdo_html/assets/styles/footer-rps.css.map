@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,MAAM;EACrC,AAAA,UAAU,EAAC,UAAU,CAAA;IACjB,SAAS,EAAE,IAAI;IACf,IAAI,EAAE,QAAQ;GACjB;EACD,AAAA,WAAW,CAAA;IACP,aAAa,EAAE,IAAI;GACtB;EACD,AAAA,SAAS,CAAA;IACL,UAAU,EAAE,IAAI;GAInB;EALD,AAEI,SAFK,CAEL,CAAC,CAAA;IACG,SAAS,EAAE,IAAI;GAClB",
+    "sources": [
+        "footer-rps.scss"
+    ],
+    "names": [],
+    "file": "footer-rps.css"
+}

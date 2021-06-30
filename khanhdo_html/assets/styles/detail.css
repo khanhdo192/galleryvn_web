@@ -1,0 +1,174 @@
+.detail-container {
+  padding-bottom: 50px;
+}
+
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery-main {
+  width: 100%;
+  height: 550px;
+  margin-top: 50px;
+}
+
+.gallery-main .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #8F8F8F;
+  opacity: 1;
+  margin: 0 8px;
+}
+
+.gallery-main .swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #FFBF1B;
+}
+
+.gallery-main .main-img {
+  padding: 0 40px;
+  border: 3px solid #E2E2E2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery-thumbs {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 80px;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.gallery-thumbs .thumb-img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
+  border-radius: 5px;
+}
+
+.detail-info {
+  padding-top: 50px;
+}
+
+.detail-info .gallery-name {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+  color: #252525;
+  margin-bottom: 30px;
+}
+
+.detail-info .media-title {
+  width: 120px;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+  color: #252525;
+}
+
+.detail-info .media {
+  margin-top: 20px;
+}
+
+.detail-info .author-name {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: #252525;
+}
+
+.detail-info .author-info {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: justify;
+  color: #656565;
+}
+
+.detail-info .gallery-info {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: #8F8F8F;
+}
+
+.detail-info .gallery-detail {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: #252525;
+}
+
+.detail-info .gallery-price {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+  color: #252525;
+}
+
+.detail-info .buy-opt {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.detail-info .btn-buy {
+  margin-top: 10px;
+  width: 100%;
+  height: 37px;
+  background: #FFFFFF;
+  border: 1px solid #FFBF1B;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFBF1B;
+}
+
+.detail-info .btn-buy:hover {
+  background: #FFBF1B;
+  color: #fff;
+}
+
+.detail-info .btn-order {
+  margin-top: 10px;
+  width: 100%;
+  height: 37px;
+  background: #FFFFFF;
+  border: 1px solid #FFBF1B;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFBF1B;
+}
+
+.detail-info .btn-order:hover {
+  background: #FFBF1B;
+  color: #fff;
+}
+/*# sourceMappingURL=detail.css.map */

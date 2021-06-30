@@ -1,0 +1,116 @@
+.highlight-container {
+  position: relative;
+}
+
+.highlight-container .swiper-pagination {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.highlight-container .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #000;
+  opacity: .1;
+  margin: 0 8px;
+}
+
+.highlight-container .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #FFBF1B;
+}
+
+.highlight-text {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+}
+
+.highlight-slide {
+  margin-top: 40px;
+}
+
+.swiper-slide {
+  width: auto !important;
+}
+
+.painting-box {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.painting-img {
+  position: relative;
+}
+
+.painting-img .paint-img {
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
+  border-radius: 10px;
+}
+
+.painting-img .btn-buy {
+  position: absolute;
+  z-index: 2;
+  bottom: -10px;
+  right: 0;
+  left: 0;
+}
+
+.painting-img .btn-sold {
+  width: 130px;
+  height: 28px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.02%, #FFFFFF), color-stop(5.74%, #F2F2F0), color-stop(16.18%, #DADADA), color-stop(21.05%, #D1D1D1), color-stop(24.64%, #D5D5D5), color-stop(32.83%, #D3D3D3), color-stop(55.44%, #D5D5D5), color-stop(66.85%, #E7E7E7), color-stop(79.87%, #F4F4F4), color-stop(85.42%, #FFFFFF), color-stop(89.42%, #FDFDFD), color-stop(93.75%, #FFFFFF), color-stop(95.84%, #FEFEFE), color-stop(95.85%, #FEFEFE), color-stop(97.88%, #EFEFEF), color-stop(97.89%, #F4D054), color-stop(97.9%, #E7E7E7), color-stop(99.96%, #F4F4F4), color-stop(99.97%, #F1F1F1), color-stop(99.98%, #F0F0F0), color-stop(99.99%, #EEEEEE), color-stop(100%, #F1F1F1), to(#F1F1F1));
+  background: linear-gradient(0deg, #FFFFFF 0.02%, #F2F2F0 5.74%, #DADADA 16.18%, #D1D1D1 21.05%, #D5D5D5 24.64%, #D3D3D3 32.83%, #D5D5D5 55.44%, #E7E7E7 66.85%, #F4F4F4 79.87%, #FFFFFF 85.42%, #FDFDFD 89.42%, #FFFFFF 93.75%, #FEFEFE 95.84%, #FEFEFE 95.85%, #EFEFEF 97.88%, #F4D054 97.89%, #E7E7E7 97.9%, #F4F4F4 99.96%, #F1F1F1 99.97%, #F0F0F0 99.98%, #EEEEEE 99.99%, #F1F1F1 100%, #F1F1F1 100%);
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: #8F8F8F;
+}
+
+.painting-img .btn-contact {
+  width: 130px;
+  height: 28px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.02%, #FFEAB0), color-stop(5.74%, #F3D887), color-stop(16.18%, #DFB941), color-stop(21.05%, #D7AD25), color-stop(24.64%, #D5AB24), color-stop(40.29%, #D1A821), color-stop(46.19%, #D4AC29), color-stop(55.44%, #DBB83F), color-stop(66.85%, #E7CA64), color-stop(79.87%, #F7E496), color-stop(85.42%, #FFF0AD), color-stop(89.42%, #FCE794), color-stop(97.89%, #F4D054), to(#F2CA43));
+  background: linear-gradient(0deg, #FFEAB0 0.02%, #F3D887 5.74%, #DFB941 16.18%, #D7AD25 21.05%, #D5AB24 24.64%, #D1A821 40.29%, #D4AC29 46.19%, #DBB83F 55.44%, #E7CA64 66.85%, #F7E496 79.87%, #FFF0AD 85.42%, #FCE794 89.42%, #F4D054 97.89%, #F2CA43 100%);
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: #875E1C;
+}
+
+.painting-infor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.painting-infor .box-infor {
+  width: 338px;
+}
+
+.painting-infor .painting-name {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+  color: #252525;
+}
+
+.painting-infor .painting-by {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: #8F8F8F;
+}
+/*# sourceMappingURL=highlight.css.map */

@@ -1,0 +1,12 @@
+main.main{
+	display: flex;
+	min-height: 100vh;
+    flex-direction: column;
+}
+section.section{
+	flex: 1;
+}
+section.section-center{
+    display: flex;
+    align-items: center;
+}

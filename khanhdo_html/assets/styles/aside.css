@@ -1,0 +1,70 @@
+.aside {
+  padding-left: 30px;
+}
+
+.brand-logo {
+  padding-top: 28px;
+}
+
+.brand-logo img {
+  width: 218px;
+  height: 58px;
+}
+
+.navigation-menu {
+  padding-top: 20px;
+}
+
+.menu-item {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+  color: #656565;
+}
+
+.menu-item:hover {
+  color: #FFBF1B;
+}
+
+.active {
+  color: #FFBF1B;
+}
+
+.widget-item {
+  margin: 15px 0;
+}
+
+.language-menu {
+  margin: 15px 0;
+}
+
+.widget-item::after {
+  display: block;
+  content: " ";
+  width: 23px;
+  height: 1px;
+  background-color: #656565;
+  margin-top: 20px;
+}
+
+.item-language {
+  padding-top: 5px;
+}
+
+.vn {
+  margin-left: 20px;
+}
+
+.language {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: #656565;
+}
+
+.language img {
+  width: 21px;
+  height: 16px;
+  margin-left: 8px;
+}
+/*# sourceMappingURL=aside.css.map */

@@ -1,0 +1,100 @@
+.contact-detail{
+    padding-top: 50px;
+    .contact-text{
+        font-size: 36px;
+        font-weight: 400;
+        font-family: 'Lora', serif;
+        color: #252525;
+        margin-bottom: 30px;
+    }
+    .contact-intro{
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Noto Sans', sans-serif;
+        color: #656565;
+        margin-bottom: 80px;
+        text-align: justify;
+    }
+    .contact-address{
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Noto Sans', sans-serif;
+        color: #656565;
+        margin-bottom: 20px;
+    }
+    .contact-phone{
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Noto Sans', sans-serif;
+        color: #656565;
+        margin-bottom: 20px;
+    }
+    .contact-email{
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Noto Sans', sans-serif;
+        color: #656565;
+        margin-bottom: 20px;
+    }
+}
+
+.contact-info{
+    margin-top: 80px;
+    ::placeholder {
+        color: #252525;
+        opacity: 1;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Lora', serif;
+      }
+      label{
+          font-size: 14px;
+          font-weight: 400;
+          font-family: 'Noto Sans', sans-serif;
+          color: #252525;
+      }
+      input{
+        height: 47px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Lora', serif;
+        color: #252525;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        border-radius: 3px;
+      }
+      input:focus{
+        border: 1px solid #FFBF1B;
+      }
+      textarea{
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Lora', serif;
+        color: #252525;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        border-radius: 3px;
+      }
+      textarea:focus{
+        border: 1px solid #FFBF1B;
+      }
+}
+
+.btn-contact{
+    margin-top: 10px;
+    width: 280px;
+    height: 47px;
+    background: #FFFFFF;
+    border: 1px solid #FFBF1B;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+    color: #FFBF1B;
+}
+.btn-contact:hover{
+    background: #FFBF1B;
+    color: #fff;
+  }

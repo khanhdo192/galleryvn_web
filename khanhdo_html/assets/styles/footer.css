@@ -1,0 +1,59 @@
+.footer {
+  padding-top: 50px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.three-icon {
+  text-align: center;
+}
+
+.three-icon .logo-service {
+  margin: 0 13px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.three-icon .logo-license {
+  background: url("../images/icon/license.svg");
+  width: 42px;
+  height: 46px;
+}
+
+.three-icon .logo-bankcard {
+  background: url("../images/icon/bankcard.svg");
+  width: 44px;
+  height: 36px;
+}
+
+.three-icon .logo-delivery {
+  background: url("../images/icon/delivery.svg");
+  width: 56px;
+  height: 41px;
+}
+
+.text-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: #656565;
+}
+
+.six-icon {
+  text-align: center;
+}
+
+.six-icon i {
+  padding-top: 20px;
+  margin: 0 8px;
+  font-size: 20px;
+  color: #656565;
+}
+/*# sourceMappingURL=footer.css.map */

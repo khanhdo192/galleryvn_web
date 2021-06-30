@@ -1,0 +1,49 @@
+@media (max-width: 1600px){
+	article.article{
+		.title-content{
+			.text{
+				font-size: 25px;
+			}
+		}
+	}
+	article.article-list, .article-home{
+		.list-content{
+			max-width: 350px;
+		}
+		.box-image{
+			height: 110px;
+		}
+		.box-info{
+			margin-top: 10px;
+			.name{
+				font-size: 16px;
+				max-height: 48px;
+				margin-bottom: 8px;
+			}
+		}
+	}
+	article.article-detail{
+		max-height: 530px;
+	}
+}
+@media (max-width: 991px){
+    article.article{
+        .title-content{
+            text-align: center;
+        }
+    }
+    article.article-contact{
+        .contact-content{
+            max-width: 100%;
+        }
+    }
+}
+@media (max-width: 768px){
+	article.article{
+		.title-content{
+			.text{
+				font-size: 24px;
+			}
+		}
+	}
+}

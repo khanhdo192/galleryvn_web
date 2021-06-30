@@ -1,0 +1,12 @@
+@mixin make-col($columns, $infix) {
+	@for $i from $columns through 1 {
+		.vtt-col#{$infix}-#{$i} {
+			position: relative;
+			padding-right: 15px;
+			padding-left: 15px;
+			width: 100%;
+			flex: 0 0 percentage(1 * $i / $columns);
+			max-width: percentage(1 * $i / $columns);
+		}
+	}
+}

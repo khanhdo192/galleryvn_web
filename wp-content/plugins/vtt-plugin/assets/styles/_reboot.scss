@@ -1,0 +1,70 @@
+.vtt-reboot{
+	*{
+		padding:0;
+		margin:0;
+		border: 0;
+		line-height:0;
+		font-weight: 400;
+	}
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+	h1, h2, h3, h4, h5, h6, strong, b, label{
+		line-height:1.5;
+		font-weight: 600;
+	}
+	a,p,span,label,small,time,figcaption{
+		line-height: 1.5;
+	}
+	a{
+		text-decoration: none;
+	}
+	table{
+		th,td{
+			line-height: 1.5;
+		}
+	}
+	h1{
+		font-size: 20px;
+	}
+	h2{
+		font-size: 19px;
+	}
+	h3{
+		font-size: 18px;
+	}
+	h4{
+		font-size: 17px;
+	}
+	h5{
+		font-size: 16px;
+	}
+	input, input.input{
+		min-height: 32px;
+		max-height: 32px;
+	}
+	textarea, textarea.textarea{
+		min-height: 80px;
+		max-height: 120px;
+		border: 1px solid #8c8f94;
+		padding: 8px;
+	}
+	input, textarea, input.input, textarea.textarea{
+		font-size: 14px;
+		width: 100%;
+		background-clip: padding-box;
+		line-height: 1.5;
+	}
+	select, select.select{
+		width: 100%;
+		max-width: 100%;
+		border-width: 1px;
+		border-style: solid;
+	}
+	[type=reset], [type=submit], button, html [type=button] {
+		-webkit-appearance: button;
+	}
+	[hidden] {
+		display: none !important;
+	}
+}

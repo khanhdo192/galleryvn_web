@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight</title>
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="stylesheet" href="assets/styles/highlight.css">
+    <link rel="stylesheet" href="assets/styles/highlight-rps.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="container highlight-container">
+        <div class="row">
+            <div class="col-12">
+                <p class="highlight-text">Tác phẩm nổi bật</p>
+            </div>
+        </div>
+        <div class="swiper-container highlight-slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide painting-box">
+                    <div class="painting-img">
+                        <img class="paint-img" id="paint-img" src="assets/images/paint1.png" alt="">
+                        <div class="btn-buy">
+                            <button type="button" class="btn btn-sold shadow-none" id="btnSold">ĐÃ BÁN</button>
+                        </div>
+                    </div>
+                    <div class="painting-infor">
+                        <div class="box-infor">
+                            <p class="painting-name" id="paint-name">Dreamlike and Narrative Storybook</p>
+                            <p class="painting-by" id="paint-by">Illustrations by Jin Xingye</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide painting-box">
+                    <div class="painting-img">
+                        <img class="paint-img" src="assets/images/paint2.png" alt="">
+                        <div class="btn-buy">
+                            <button type="button" class="btn btn-contact shadow-none" id="btnContact">LIÊN HỆ</button>
+                        </div>
+                    </div>
+                    <div class="painting-infor">
+                        <div class="box-infor">
+                            <p class="painting-name">Dreamlike and Narrative</p>
+                            <p class="painting-by">Sơn dầu by Jin Xingye</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide painting-box">
+                    <div class="painting-img">
+                        <img class="paint-img" src="assets/images/paint3.png" alt="">
+                        <div class="btn-buy">
+                            <button type="button" class="btn btn-contact shadow-none" id="btnContact">LIÊN HỆ</button>
+                        </div>
+                    </div>
+                    <div class="painting-infor">
+                        <div class="box-infor">
+                            <p class="painting-name">Narrative Storybook</p>
+                            <p class="painting-by">Chất liệu tổng hợp by Jin Xingye</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagi-hl">
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <script src="assets/scripts/app.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/highlight.js"></script>
+</body>
+</html>

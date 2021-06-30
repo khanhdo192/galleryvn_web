@@ -1,0 +1,28 @@
+sobjich3u189m0ap
+administrator
+
+<ul class="contact-content">
+	<li class="item-info">
+		<p class="info">Born in Swansea, Thomas began writing as a reporter for the South Wales Evening Post. Eighteen Poems published in 1934 established him in literary circles. Further poems and short stories were published as Twenty-Five Poems (1936), The Map of Love (1939), Portrait of the Artist as Young Dog (1940) and Deaths and Entrances (1946), including his best-known poem 'Fern Hill'. During the Second World War, Thomas was a regular broadcaster on BBC radio and he toured America in 1950, 1952 and 1953.</p>
+	</li>
+	<li class="item-address">
+		<p class="address">Địa chỉ: Hai Bà Trưng, Hà Nội</p>
+	</li>
+	<li class="item-address">
+		<p class="address">Điện thoại: 123456788</p>
+	</li>
+	<li class="item-address">
+		<p class="address">Email: abc@123.com</p>
+	</li>
+</ul>
+
+function send_smtp_email( $phpmailer ) {
+  $phpmailer->IsSMTP();
+  $phpmailer->Host       = 'smtp.gmail.com';
+  $phpmailer->Port       = 465;
+  $phpmailer->SMTPAuth   = true;
+  $phpmailer->Username   = 'email_app@gmail.com'; // Email bạn dùng đăng ký mật khẩu ứng dụng
+  $phpmailer->Password   = 'password_app_gmail'; // Mật khẩu ứng dụng Gmail
+  $phpmailer->SMTPSecure = "ssl";
+}
+add_action( 'phpmailer_init', 'send_smtp_email' );

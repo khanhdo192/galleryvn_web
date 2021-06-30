@@ -1,0 +1,198 @@
+
+# BEGIN WordPress
+# Các nội dung nằm giữa "BEGIN WordPress" và "END WordPress" được tạo ra tự động, và chỉ nên được thay đổi thông qua các filter của WordPress. Mọi thay đổi tới thành phần này có thể sẽ bị mất và ghi đè.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+<IfModule mod_headers.c>
+	<FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">
+		Header set Access-Control-Allow-Origin "*"
+	</FilesMatch>
+	<FilesMatch "\.(ini|rar|zip|tar|gz|docx|xls|scss|sass)$">
+		Require all denied
+	</FilesMatch>
+</IfModule>
+
+# Other
+<IfModule mod_negotiation.c>
+    Options -MultiViews
+</IfModule>
+
+<IfModule mod_authz_core.c>
+    <FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|orig|psd|sh|sql|sw[op])|~)$">
+        Require all denied
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header unset X-Powered-By
+    Header always unset X-Powered-By
+</IfModule>
+
+ServerSignature Off
+
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+
+FileETag None
+
+<IfModule mime_module>
+	AddType application/x-httpd-ea-php72 .php .php7 .phtml
+</IfModule>
+
+# Cache expiration
+# 1 month: 2592000 | 1 week: 604800 | 1 day: 86400 | 1 hour: 3600 | 1 minute: 60
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault                                      "access plus 1 hour"
+    ExpiresByType text/css                              "access plus 1 week"
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rdf+xml                   "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/ld+json                   "access plus 0 seconds"
+    ExpiresByType application/schema+json               "access plus 0 seconds"
+    ExpiresByType application/geo+json                  "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/calendar                         "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+    ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
+    ExpiresByType image/x-icon                          "access plus 1 week"
+    ExpiresByType text/html                             "access plus 0 seconds"
+    ExpiresByType application/javascript                "access plus 1 week"
+    ExpiresByType application/x-javascript              "access plus 1 week"
+    ExpiresByType text/javascript                       "access plus 1 week"
+    ExpiresByType application/manifest+json             "access plus 1 week"
+    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+    ExpiresByType text/markdown                         "access plus 0 seconds"
+    ExpiresByType audio/ogg                             "access plus 1 month"
+    ExpiresByType image/bmp                             "access plus 1 month"
+    ExpiresByType image/gif                             "access plus 1 month"
+    ExpiresByType image/jpeg                            "access plus 1 month"
+    ExpiresByType image/png                             "access plus 1 month"
+    ExpiresByType image/svg+xml                         "access plus 1 month"
+    ExpiresByType image/webp                            "access plus 1 month"
+    ExpiresByType video/mp4                             "access plus 1 month"
+    ExpiresByType video/ogg                             "access plus 1 month"
+    ExpiresByType video/webm                            "access plus 1 month"
+    ExpiresByType application/wasm                      "access plus 1 month"
+    ExpiresByType font/collection                       "access plus 1 month"
+    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+    ExpiresByType font/eot                              "access plus 1 month"
+    ExpiresByType font/opentype                         "access plus 1 month"
+    ExpiresByType font/otf                              "access plus 1 month"
+    ExpiresByType application/x-font-ttf                "access plus 1 month"
+    ExpiresByType font/ttf                              "access plus 1 month"
+    ExpiresByType application/font-woff                 "access plus 1 month"
+    ExpiresByType application/x-font-woff               "access plus 1 month"
+    ExpiresByType font/woff                             "access plus 1 month"
+    ExpiresByType application/font-woff2                "access plus 1 month"
+    ExpiresByType font/woff2                            "access plus 1 month"
+    ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType application/atom+xml				atom
+    AddType application/json					json map topojson
+    AddType application/ld+json					jsonld
+    AddType application/rss+xml					rss
+    AddType application/geo+json				geojson
+    AddType application/rdf+xml					rdf
+    AddType application/xml						xml
+    AddType text/javascript						js mjs
+    AddType application/manifest+json			webmanifest
+    AddType application/x-web-app-manifest+json	webapp
+    AddType text/cache-manifest					appcache
+    AddType audio/mp4							f4a f4b m4a
+    AddType audio/ogg							oga ogg opus
+    AddType image/bmp							bmp
+    AddType image/svg+xml						svg svgz
+    AddType image/webp							webp
+    AddType video/mp4							f4v f4p m4v mp4
+    AddType video/ogg							ogv
+    AddType video/webm							webm
+    AddType video/x-flv							flv
+    AddType image/x-icon						cur ico
+    AddType application/wasm					wasm
+    AddType font/woff							woff
+    AddType font/woff2							woff2
+    AddType application/vnd.ms-fontobject		eot
+    AddType font/ttf							ttf
+    AddType font/collection						ttc
+    AddType font/otf							otf
+    AddType application/octet-stream			safariextz
+    AddType application/x-bb-appworld			bbaw
+    AddType application/x-chrome-extension		crx
+    AddType application/x-opera-extension		oex
+    AddType application/x-xpinstall				xpi
+    AddType text/calendar						ics
+    AddType text/markdown						markdown md
+    AddType text/vcard							vcard vcf
+    AddType text/vnd.rim.location.xloc			xloc
+    AddType text/vtt							vtt
+    AddType text/x-component					htc
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+    <IfModule mod_setenvif.c>
+        <IfModule mod_headers.c>
+            SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+            RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+        </IfModule>
+    </IfModule>
+    <IfModule mod_filter.c>
+        AddOutputFilterByType DEFLATE application/atom+xml
+        AddOutputFilterByType DEFLATE application/javascript
+        AddOutputFilterByType DEFLATE application/json
+        AddOutputFilterByType DEFLATE application/ld+json
+        AddOutputFilterByType DEFLATE application/manifest+json
+        AddOutputFilterByType DEFLATE application/rdf+xml
+        AddOutputFilterByType DEFLATE application/rss+xml
+        AddOutputFilterByType DEFLATE application/schema+json
+        AddOutputFilterByType DEFLATE application/geo+json
+        AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+        AddOutputFilterByType DEFLATE application/wasm
+        AddOutputFilterByType DEFLATE application/x-font-ttf
+        AddOutputFilterByType DEFLATE application/x-javascript
+        AddOutputFilterByType DEFLATE application/x-web-app-manifest+json
+        AddOutputFilterByType DEFLATE application/xhtml+xml
+        AddOutputFilterByType DEFLATE application/xml
+        AddOutputFilterByType DEFLATE font/eot
+        AddOutputFilterByType DEFLATE font/opentype
+        AddOutputFilterByType DEFLATE font/otf
+        AddOutputFilterByType DEFLATE image/bmp
+        AddOutputFilterByType DEFLATE image/svg+xml
+        AddOutputFilterByType DEFLATE image/vnd.microsoft.icon
+        AddOutputFilterByType DEFLATE text/cache-manifest
+        AddOutputFilterByType DEFLATE text/calendar
+        AddOutputFilterByType DEFLATE text/css
+        AddOutputFilterByType DEFLATE text/html
+        AddOutputFilterByType DEFLATE text/javascript
+        AddOutputFilterByType DEFLATE text/plain
+        AddOutputFilterByType DEFLATE text/markdown
+        AddOutputFilterByType DEFLATE text/vcard
+        AddOutputFilterByType DEFLATE text/vnd.rim.location.xloc
+        AddOutputFilterByType DEFLATE text/vtt
+        AddOutputFilterByType DEFLATE text/x-component
+        AddOutputFilterByType DEFLATE text/x-cross-domain-policy
+        AddOutputFilterByType DEFLATE text/xml
+    </IfModule>
+    <IfModule mod_mime.c>
+		AddEncoding gzip		svgz
+    </IfModule>
+</IfModule>

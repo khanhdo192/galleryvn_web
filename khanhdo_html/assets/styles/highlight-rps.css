@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1024px) {
+  .swiper-pagination {
+    position: absolute;
+    top: 96vh !important;
+    right: 0;
+    left: 0;
+  }
+  .swiper-slide {
+    width: 100% !important;
+  }
+  .highlight-text {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=highlight-rps.css.map */

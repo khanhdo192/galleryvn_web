@@ -1,0 +1,279 @@
+@media (max-width: 1600px){
+	header.header{
+		nav.navbar{
+			height: 44px;
+		}
+		.navbar-logo{
+			.logo{
+				img{
+					max-height: 45px;
+				}
+			}
+		}
+		.navbar-nav-search{
+			height: 38px;
+			.dropdown-menu{
+				margin: 3px 0 0 0;
+			}
+			.dropdown-item{
+				p{
+					font-size: 13px;
+					line-height: 1.5;
+					color: #252525;
+				}
+			}
+			.dropdown-toggle{
+				.text{
+					font-size: 13px;
+				}
+			}
+			.search-input{
+				.form-control{
+					height: 38px;
+					font-size: 13px;
+				}
+			}
+		}
+		.navbar-nav-button{
+			.btn-search{
+				width: 44px;
+				height: 44px;
+			}
+		}
+	}
+	main.main{
+		max-width: 1200px;
+		form.contact-form{
+			.form-group{
+				padding-bottom: 10px;
+			}
+			.form-title{
+				font-size: 16px;
+			}
+		}
+	}
+    footer.footer{
+		.container-fluid{
+			&.main-witdh{
+				max-width: 1200px;
+			}
+		}
+		.control-button{
+			.btn-slide{
+				height: 40px;
+				width: 40px;
+			}
+		}
+		.tooltip-content{
+			width: 150px;
+			.tip{
+				font-size: 12px;
+			}
+		}
+    }
+	.pagination-next-prev{
+		.page-numbers.prev, .page-numbers.next, .page-numbers.current, .page-symbols{
+			height: 40px;
+			width: 40px;
+		}
+	}
+	i.symbol{
+		&.chevron-down2x{
+			height: 10px;
+			width: 20px;
+		}
+		&.chevron-up2x{
+			height: 10px;
+			width: 20px;
+		}
+		&.chevron-next2x{
+			height: 20px;
+			width: 10px;
+		}
+		&.chevron-prev2x{
+			height: 20px;
+			width: 10px;
+		}
+		&.icon-search{
+			height: 23px;
+			width: 23px;
+		}
+		&.icon-close{
+			height: 20px;
+			width: 20px;
+		}
+		&.license{
+			width: 35px;
+			height: 38px;
+		}
+		&.delivery{
+			width: 47px;
+			height: 34px;
+		}
+	}
+}
+@media (max-width: 1600px) and (min-width: 993px){
+	body.body{
+		.overlay{
+			background-color: transparent;
+		}
+	}
+	aside.aside{
+		width: 200px;
+	}
+}
+@media (max-width: 992px){
+	body.body{
+		.cloud-tag{
+			display: block;
+			justify-content: initial;
+			padding-bottom: 10px;
+			.tag-item{
+				display: inline-block;
+			}
+		}
+	}
+	header.header{
+		.menu-web{
+			display: none;
+		}
+		.menu-mobile{
+			display: block;
+			box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+			.row{
+				align-items: center;
+				height: 70px;
+				.navbar-logo{
+					display: block;
+					text-align: center;
+					padding-top: 0;
+					padding-bottom: 0;
+					.logo{
+						img{
+							max-height: 40px;
+						}
+					}
+				}
+				.navbar-menu{
+					text-align: left;
+					.btn:focus{
+						box-shadow: none;
+					}
+					span{
+						width: 30px;
+					}
+				}
+				.navbar-nav-button{
+					transform: initial;
+					position: initial;
+					right: initial;
+					top: initial;
+					text-align: right;
+					.btn:focus{
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+	aside.aside{
+		.btn-close{
+			color: #656565;
+		}
+	}
+	aside.aside-menu{
+		background-color: #ddd;
+		.navigation-menu{
+			.menu-item{
+				padding-top: 12px;
+				padding-bottom: 12px;
+				.link{
+					color: #656565;
+				}
+			}
+		}
+		.translation-menu{
+			display: block;
+			padding-top: 5px;
+		}
+	}
+	main.main{
+		.contact-form{
+			max-width: 100%;
+			padding-top: 50px;
+		}
+	}
+    footer.footer{
+		.line{
+			border-top: 1px solid #8f8f8f;
+			padding-top: 15px;
+		}
+        .service-list{
+            padding-bottom: 10px;
+        }
+        .footer-content{
+            flex-direction: column;
+            .text{
+                text-align: center;
+				font-size: 13px;
+            }
+            .span{
+                display: block;
+            }
+        }
+		.tooltip-content{
+			left: 50%;
+			transform: translate(-50%, -110%);
+		}
+    }
+	i.symbol{
+		&.icon-close{
+			background-image: url(../images/close-mb.svg);
+		}
+		&.license{
+			width: 30px;
+			height: 31px;
+		}
+		&.bankcard{
+			width: 35px;
+			height: 27px;
+		}
+		&.delivery{
+			width: 40px;
+			height: 30px;
+		}
+	}
+}
+@media (max-width: 768px){
+	header.header{
+		padding-left: 0;
+		padding-right: 0;
+		.navbar-nav-button{
+			.btn-search{
+				width: 40px;
+				height: 40px;
+			}
+		}
+		.show:not(.dropdown-menu){
+			display: none !important;
+		}
+	}
+	main.main{
+		flex: initial;
+	}
+    footer.footer{
+		.container-fluid{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+@media (max-width: 425px){
+	main.main{
+		form.contact-form{
+			.btn-contact{
+				width: 100%;
+			}
+		}
+	}
+}
